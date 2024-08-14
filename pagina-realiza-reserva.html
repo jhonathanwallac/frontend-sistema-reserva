@@ -33,8 +33,8 @@
 
     .date-container {
       display: flex;
-      align-items: center;
-      gap: 10px;
+      flex-direction: column;
+      align-items: start;
       margin-bottom: 20px;
     }
 
@@ -128,9 +128,9 @@
       </div>
 
       <div class="mt-4">
-        <label for="horarioInicio" class="form-label">Horário:</label>
-        <div class="selects-container">
-          <select id="horarioInicio" class="form-select">
+        <label for="horarioChegada" class="form-label">Horário de chegada:</label>
+        <div class="select-container">
+          <select id="horarioChegada" class="form-select">
             <option value="08:00">08:00</option>
             <option value="09:00">09:00</option>
             <option value="10:00">10:00</option>
@@ -146,8 +146,13 @@
             <option value="20:00">20:00</option>
             <option value="21:00">21:00</option>
           </select>
-          até
-          <select id="horarioFim" class="form-select">
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <label for="horarioSaida" class="form-label">Horário de saída:</label>
+        <div class="select-container">
+          <select id="horarioSaida" class="form-select">
             <option value="09:00">09:00</option>
             <option value="10:00">10:00</option>
             <option value="11:00">11:00</option>
@@ -164,7 +169,6 @@
             <option value="22:00">22:00</option>
           </select>
         </div>
-      </div>
 
       <button class="btn cor-botao-reserva mt-4">Reservar</button>
     </div>
